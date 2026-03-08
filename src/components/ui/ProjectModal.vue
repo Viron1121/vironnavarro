@@ -18,7 +18,7 @@ defineEmits(['close'])
         </button>
 
         <!-- Image -->
-        <div class="w-full h-64 sm:h-80 bg-gray-100 dark:bg-gray-800 relative">
+        <div class="w-full h-full sm:h-80 bg-gray-100 dark:bg-gray-800 relative">
             <img v-if="project?.image" :src="project.image" class="w-full h-full object-cover" :alt="project?.title" />
             <div v-else class="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500">
                 <span class="text-sm">Image Placeholder</span>

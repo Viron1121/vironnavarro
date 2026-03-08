@@ -4,7 +4,7 @@ import ProjectCard from '../ui/ProjectCard.vue'
 import ProjectModal from '../ui/ProjectModal.vue'
 
 // Basic categories matching the screenshot
-const categories = ['All Projects', 'Vue.js', 'Laravel', 'Full-Stack', 'React']
+const categories = ['All Projects', 'Vue.js', 'Laravel', 'Full-Stack', 'React', 'Mobile']
 const activeCategory = ref('All Projects')
 
 // Modal State
@@ -27,8 +27,8 @@ const closeModal = () => {
 const projects = [
     {
         id: 1,
-        title: "Rarejob - Online English School",
-        description: "Maintain and add feature patches for the Rarejob platform ensuring 100% system uptime by resolving 50+ technical tickets per month.",
+        title: "RareJob - Online English School Platform",
+        description: "Maintained and improved RareJob’s online learning platforms, including the tutor and student websites. Implemented bug fixes and feature patches, resolved 50+ technical tickets monthly, and collaborated with cross-functional teams using an Agile workflow to ensure stable releases and high system uptime.",
         image: "/rarejob.png", 
         featured: true,
         category: "Full-Stack", 
@@ -51,6 +51,15 @@ const projects = [
         featured: true,
         category: "Full-Stack",
         tags: ["Laravel", "blade", "MySQL", "Figma", "Responsive Design"]
+    },
+    {
+        id: 4,
+        title: "Habit Tracker",
+        description: "A personal mobile application designed to help users track daily habits and monitor progress, with secure login functionality integrated using Google OAuth through Google Cloud. ",
+        image: "/habit.png",
+        featured: true,
+        category: "Full-Stack",
+        tags: ["Laravel", "React Native", "Google Cloud", "Figma", "Responsive Design", "SQL", "Mobile"]
     },
 ]
 
