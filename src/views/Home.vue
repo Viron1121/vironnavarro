@@ -4,6 +4,7 @@
   <About />
   <Techstack />
   <Experience />
+  <Projects />
   <ProcessTimeline />
   <ContactSection />
   <Footer />
@@ -15,6 +16,7 @@
     import About from '../components/sections/About.vue'
     import Techstack from '../components/sections/TechStack.vue'
     import Experience from '../components/sections/Experience.vue'
+    import Projects from '../components/sections/Projects.vue'
     import ProcessTimeline from '../components/sections/ProcessTimeline.vue'
     import ContactSection from '../components/sections/ContactSection.vue'
     import Footer from '../components/layout/Footer.vue'

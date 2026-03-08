@@ -41,6 +41,7 @@ onMounted(() => {
           <a href="#about" class="hover:text-black dark:hover:text-white transition">About</a>
           <a href="#Tech-Stack" class="hover:text-black dark:hover:text-white transition">Tech Stack</a>
           <a href="#experience" class="hover:text-black dark:hover:text-white transition">Experience</a>
+          <a href="#projects" class="hover:text-black dark:hover:text-white transition">Projects</a>
           <a href="#Process-Timeline" class="hover:text-black dark:hover:text-white transition">Workflow</a>
           <a href="#Contact" class="hover:text-black dark:hover:text-white transition">Contact</a>
         </nav>
