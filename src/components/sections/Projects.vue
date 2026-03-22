@@ -32,7 +32,9 @@ const projects = [
         image: "/rarejob.png", 
         featured: true,
         category: "Full-Stack", 
-        tags: ["Laravel", "Yii", "Vue.js", "TypeScript", "Full-Stack"]
+        tags: ["Laravel", "Yii", "Vue.js", "TypeScript", "Full-Stack"],
+        liveUrl: "https://www.rarejob.com.ph",
+        isPublic: true
     },
     {
         id: 2,
@@ -41,7 +43,9 @@ const projects = [
         image: "/curemed.png",
         featured: true,
         category: "Full-Stack",
-        tags: ["Laravel", "React", "PHP", "Responsive Design", "Figma"]
+        tags: ["Laravel", "React", "PHP", "Responsive Design", "Figma"],
+        liveUrl: null,
+        isPublic: false
     },
     {
         id: 3,
@@ -50,7 +54,9 @@ const projects = [
         image: "/mms.png",
         featured: true,
         category: "Full-Stack",
-        tags: ["Laravel", "blade", "MySQL", "Figma", "Responsive Design"]
+        tags: ["Laravel", "blade", "MySQL", "Figma", "Responsive Design"],
+        liveUrl: null,
+        isPublic: false
     },
     {
         id: 4,
@@ -59,7 +65,20 @@ const projects = [
         image: "/habit.png",
         featured: true,
         category: "Full-Stack",
-        tags: ["Laravel", "React Native", "Google Cloud", "Figma", "Responsive Design", "SQL", "Mobile"]
+        tags: ["Laravel", "React Native", "Google Cloud", "Figma", "Responsive Design", "SQL", "Mobile"],
+        liveUrl: null,
+        isPublic: false
+    },
+    {
+        id: 5,
+        title: "Readme Generator",
+        description: "A web application that helps users generate readmes for their projects. It features a simple and intuitive interface that allows users to generate readmes for their projects. It also features a preview mode that allows users to preview their readmes before generating them.",
+        image: "/readme.png",
+        featured: true,
+        category: "React",
+        tags: ["React", "Figma", "Responsive Design", "CSS", "SEO"],
+        liveUrl: "https://readme-generator.viron3210.workers.dev/",
+        isPublic: true
     },
 ]
 

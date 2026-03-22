@@ -1,5 +1,5 @@
 <script setup>
-import { X, ExternalLink, Github } from 'lucide-vue-next'
+import { X, ExternalLink, Github, LockKeyhole } from 'lucide-vue-next'
 defineProps({
     project: Object,
     isOpen: Boolean
@@ -18,8 +18,8 @@ defineEmits(['close'])
         </button>
 
         <!-- Image -->
-        <div class="w-full h-full sm:h-80 bg-gray-100 dark:bg-gray-800 relative">
-            <img v-if="project?.image" :src="project.image" class="w-full h-full object-cover" :alt="project?.title" />
+        <div class="w-full sm:h-80 bg-gray-900 dark:bg-[#0D1117] relative flex items-center justify-center overflow-hidden">
+            <img v-if="project?.image" :src="project.image" class="w-full h-full object-contain" :alt="project?.title" />
             <div v-else class="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500">
                 <span class="text-sm">Image Placeholder</span>
             </div>
@@ -40,10 +40,25 @@ defineEmits(['close'])
             </p>
 
             <!-- Links -->
-            <div class="flex flex-wrap gap-4">
-                <a v-if="project?.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 bg-cyan-600 dark:bg-cyan-500 hover:bg-cyan-700 dark:hover:bg-cyan-400 text-white dark:text-black font-semibold rounded-lg transition-colors">
+            <div class="flex flex-wrap gap-4 items-center">
+                <!-- Live link if public -->
+                <a
+                    v-if="project?.isPublic && project?.liveUrl"
+                    :href="project.liveUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-2 px-6 py-3 bg-cyan-600 dark:bg-cyan-500 hover:bg-cyan-700 dark:hover:bg-cyan-400 text-white dark:text-black font-semibold rounded-lg transition-colors"
+                >
                     <ExternalLink class="w-4 h-4" /> Live Demo
                 </a>
+                <!-- Not accessible notice -->
+                <span
+                    v-else-if="project?.isPublic === false"
+                    class="flex items-center gap-2 px-6 py-3 bg-gray-100 dark:bg-white/5 text-gray-500 dark:text-gray-400 font-semibold rounded-lg border border-gray-200 dark:border-white/10 cursor-default"
+                >
+                    <LockKeyhole class="w-4 h-4" /> Not Publicly Accessible
+                </span>
+                <!-- GitHub -->
                 <a v-if="project?.githubUrl" :href="project.githubUrl" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-900 dark:text-white font-semibold rounded-lg transition-colors border border-transparent dark:border-white/10">
                     <Github class="w-4 h-4" /> View Code
                 </a>
