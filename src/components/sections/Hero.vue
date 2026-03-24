@@ -33,7 +33,7 @@
           </a>
 
           <a
-            href="/cv_navarro.pdf"
+            href="/Viron_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             class="px-6 py-3 rounded-lg border border-gray-300 dark:border-white/20 text-gray-700 dark:text-white
